@@ -1,218 +1,136 @@
-# My Anniversary
+<div align="center">
 
-เว็บไซต์แสดงความทรงจำและเนื้อหาเฉลิมฉลองวันครบรอบ พัฒนาด้วย React, TypeScript และ Vite พร้อมจัดรูปแบบส่วนติดต่อผู้ใช้ด้วย Tailwind CSS และ CSS ของโปรเจกต์
+# 💗 My Anniversary
 
-เอกสารฉบับนี้อธิบายการติดตั้ง การพัฒนา การตรวจสอบคุณภาพ การสร้างไฟล์สำหรับเผยแพร่ และการอัปเดตเว็บไซต์ผ่าน Netlify Drop
+### A little digital space for our memories
 
-## 1. ข้อกำหนดเบื้องต้น
+เว็บไซต์วันครบรอบที่รวบรวมรูปภาพ วิดีโอ และช่วงเวลาพิเศษเอาไว้ในที่เดียว  
+สร้างด้วยความรักด้วย React, TypeScript และ Vite
 
-โปรเจกต์ต้องใช้ซอฟต์แวร์ดังต่อไปนี้
+<p>
+  <a href="https://github.com/Kantinan48/LOVE-GORPOR">Repository</a>
+  ·
+  <a href="https://github.com/Unlock-48/LOVE-GORPOR">Mirror Repository</a>
+</p>
 
-- Node.js รุ่นที่รองรับการทำงานกับ dependencies ใน `package.json`
-- npm ซึ่งติดตั้งมาพร้อม Node.js
-- เว็บเบราว์เซอร์สมัยใหม่ เช่น Google Chrome, Microsoft Edge หรือ Firefox
+</div>
 
-ตรวจสอบเวอร์ชันที่ติดตั้งในเครื่อง:
+<p align="center">
+  <img src="./src/assets/hero.png" alt="My Anniversary preview" width="760">
+</p>
 
-```powershell
-node --version
-npm --version
-```
+## ✨ เกี่ยวกับโปรเจ็กต์
 
-## 2. การติดตั้งโปรเจกต์
+โปรเจ็กต์นี้เป็นเว็บไซต์ส่วนตัวสำหรับบันทึกเรื่องราวของเราในรูปแบบ interactive
+มีทั้งแกลเลอรีความทรงจำ วิดีโอ ช่วงเวลาโปรด และข้อความที่อยากเก็บไว้ดูด้วยกัน
 
-เปิด PowerShell แล้วเข้าสู่โฟลเดอร์โปรเจกต์:
+## 🌷 ฟีเจอร์
 
-```powershell
-cd "C:\Users\67143\Desktop\lovegorpor\my-anniversary"
-```
+- **Memory gallery** — ดูรูปภาพและความทรงจำในรูปแบบแกลเลอรี
+- **Story showcase** — นำเสนอเรื่องราวผ่านวิดีโอและข้อความ
+- **Interactive controls** — กดถูกใจ เปิดดูรูปภาพ และเลื่อนดูเนื้อหาได้
+- **Responsive design** — ใช้งานได้ทั้งบนคอมพิวเตอร์และโทรศัพท์
+- **Beautiful UI** — โทนสีและ typography ที่ออกแบบให้เหมาะกับเว็บไซต์ความทรงจำ
 
-ติดตั้ง dependencies:
+## 🛠️ เทคโนโลยี
 
-```powershell
-npm install
-```
+| เทคโนโลยี | หน้าที่ |
+| --- | --- |
+| [React](https://react.dev/) | สร้างส่วนติดต่อผู้ใช้ |
+| [TypeScript](https://www.typescriptlang.org/) | เพิ่ม type safety ให้โค้ด |
+| [Vite](https://vite.dev/) | Development server และ build tool |
+| [Tailwind CSS](https://tailwindcss.com/) | ช่วยจัดรูปแบบ UI |
+| [Lucide React](https://lucide.dev/) | ไอคอนในเว็บไซต์ |
 
-โดยทั่วไป หากมีไฟล์ `package-lock.json` อยู่แล้ว ควรใช้คำสั่งต่อไปนี้เพื่อให้ได้ dependencies ตรงตาม lockfile:
+## 🚀 เริ่มต้นใช้งาน
 
-```powershell
+### สิ่งที่ต้องมี
+
+- [Node.js](https://nodejs.org/) เวอร์ชันที่รองรับโปรเจ็กต์
+- npm
+
+### ติดตั้งและเปิดโปรเจ็กต์
+
+```bash
+git clone https://github.com/Kantinan48/LOVE-GORPOR.git
+cd LOVE-GORPOR
 npm ci
-```
-
-## 3. การเปิดเว็บไซต์ระหว่างพัฒนา
-
-เริ่มเซิร์ฟเวอร์สำหรับพัฒนา:
-
-```powershell
 npm run dev
 ```
 
-จากนั้นเปิด URL ที่แสดงในหน้าต่าง PowerShell โดยปกติ Vite จะใช้งานที่:
+จากนั้นเปิด URL ที่ Vite แสดงใน Terminal โดยปกติคือ
+[`http://localhost:5173`](http://localhost:5173)
 
-```text
-http://localhost:5173
-```
-
-เซิร์ฟเวอร์รองรับ Hot Module Replacement เมื่อแก้ไขไฟล์ เว็บไซต์จะรีเฟรชการเปลี่ยนแปลงให้โดยอัตโนมัติ
-
-หยุดเซิร์ฟเวอร์ด้วย `Ctrl + C`
-
-## 4. คำสั่งที่ใช้งานได้
+## 📦 คำสั่งที่ใช้บ่อย
 
 | คำสั่ง | รายละเอียด |
 | --- | --- |
-| `npm install` | ติดตั้ง dependencies ของโปรเจกต์ |
-| `npm ci` | ติดตั้ง dependencies ตาม `package-lock.json` แบบสะอาด |
 | `npm run dev` | เปิดเซิร์ฟเวอร์สำหรับพัฒนา |
-| `npm run lint` | ตรวจสอบรูปแบบและปัญหาตามกฎ ESLint |
-| `npm run build` | ตรวจสอบ TypeScript และสร้างไฟล์ production ใน `dist` |
-| `npm run preview` | เปิดดูไฟล์ production ที่ build แล้วในเครื่อง |
+| `npm run lint` | ตรวจสอบโค้ดด้วย ESLint |
+| `npm run build` | ตรวจสอบ TypeScript และสร้าง production build |
+| `npm run preview` | เปิดดู production build ในเครื่อง |
 
-## 5. การตรวจสอบก่อนเผยแพร่
+ก่อนเผยแพร่เว็บไซต์ แนะนำให้ตรวจสอบด้วยคำสั่ง:
 
-ก่อนนำเว็บไซต์ขึ้นออนไลน์ ควรเรียกใช้คำสั่งต่อไปนี้:
-
-```powershell
+```bash
 npm run lint
 npm run build
 ```
 
-การ build ที่สำเร็จจะสร้างโฟลเดอร์:
-
-```text
-C:\Users\67143\Desktop\lovegorpor\my-anniversary\dist
-```
-
-ทดสอบไฟล์ production ในเครื่องได้ด้วย:
-
-```powershell
-npm run preview
-```
-
-## 6. การอัปเดตเว็บไซต์ผ่าน Netlify Drop
-
-วิธีนี้เหมาะสำหรับการเผยแพร่เว็บไซต์แบบ static โดยไม่ต้องติดตั้ง Netlify CLI หรือเชื่อมต่อ Git repository
-
-### 6.1 สร้างไฟล์ production
-
-ทุกครั้งที่แก้ไขเว็บไซต์ ให้เปิด PowerShell ที่โฟลเดอร์โปรเจกต์และเรียกใช้:
-
-```powershell
-cd "C:\Users\67143\Desktop\lovegorpor\my-anniversary"
-npm run build
-```
-
-ห้ามลากโฟลเดอร์โปรเจกต์ทั้งหมดขึ้น Netlify ให้ใช้เฉพาะโฟลเดอร์ `dist` ที่สร้างหลังจาก build สำเร็จ
-
-### 6.2 อัปโหลดเว็บไซต์
-
-1. เปิด [Netlify Drop](https://app.netlify.com/drop)
-2. เปิด File Explorer ไปที่โฟลเดอร์ `dist`
-3. ลากโฟลเดอร์ `dist` ไปวางในพื้นที่อัปโหลดของ Netlify
-4. รอให้ Netlify อัปโหลดและประมวลผลไฟล์จนเสร็จ
-5. เปิด URL ที่ Netlify แสดงเพื่อทดสอบเว็บไซต์
-
-### 6.3 อัปเดตเว็บไซต์เดิม
-
-เมื่อมีการแก้ไขเว็บไซต์:
-
-1. แก้ไขไฟล์ในโฟลเดอร์ `src` หรือ `public`
-2. เรียกใช้ `npm run lint`
-3. เรียกใช้ `npm run build`
-4. ลากโฟลเดอร์ `dist` ที่สร้างใหม่ไปยัง Netlify
-5. ตรวจสอบหน้าแรก รูปภาพ ปุ่ม และเนื้อหาสำคัญบน URL จริง
-
-หาก Netlify แสดงเป็นการสร้างเว็บไซต์ใหม่แทนการอัปเดตเว็บไซต์เดิม ให้ตรวจสอบว่าเปิดหน้า deploy ของเว็บไซต์เดิมอยู่ หรือใช้วิธี deploy จากแดชบอร์ดของเว็บไซต์เดิม
-
-## 7. โครงสร้างโฟลเดอร์สำคัญ
+## 🗂️ โครงสร้างโปรเจ็กต์
 
 ```text
 my-anniversary/
-├─ public/              ไฟล์ static และรูปภาพที่เข้าถึงได้โดยตรง
-├─ src/                 ซอร์สโค้ด React และ TypeScript
-│  ├─ assets/           ไฟล์ประกอบที่ import ผ่านซอร์สโค้ด
-│  ├─ data/             ข้อมูลที่ใช้แสดงผลในเว็บไซต์
-│  ├─ editpic/          ไฟล์หรือส่วนที่เกี่ยวข้องกับการจัดการรูปภาพ
-│  ├─ App.tsx           คอมโพเนนต์หลักของเว็บไซต์
-│  ├─ App.css           สไตล์หลักของแอปพลิเคชัน
-│  ├─ index.css         สไตล์พื้นฐานระดับ global
-│  └─ main.tsx          จุดเริ่มต้นการ render React
-├─ dist/                ไฟล์ production ที่สร้างโดย npm run build
-├─ index.html           HTML entry point
-├─ package.json         scripts และ dependencies
-├─ package-lock.json    เวอร์ชัน dependencies ที่ถูกล็อกไว้
-├─ vite.config.ts       การตั้งค่า Vite และ development plugin
-└─ tsconfig*.json       การตั้งค่า TypeScript
+├── public/              รูปภาพและวิดีโอที่ใช้บนเว็บไซต์
+├── src/
+│   ├── assets/          ไฟล์ภาพที่ import ผ่านโค้ด
+│   ├── data/            ข้อมูล memories และ showcase
+│   ├── App.tsx          คอมโพเนนต์หลัก
+│   ├── App.css          สไตล์ของแอป
+│   └── main.tsx         จุดเริ่มต้นของ React
+├── index.html
+├── package.json
+└── vite.config.ts
 ```
 
-## 8. การจัดการรูปภาพ
+## 🌐 การเผยแพร่ด้วย Netlify
 
-รูปภาพที่ต้องการเผยแพร่เป็นส่วนหนึ่งของเว็บไซต์ควรจัดเก็บไว้ใน `public` หรืออยู่ในตำแหน่งที่ซอร์สโค้ด import ได้ถูกต้อง
+สร้างไฟล์สำหรับเผยแพร่ก่อน:
 
-เมื่อเพิ่มหรือลบรูปภาพ ให้เรียกใช้ build ใหม่ทุกครั้ง:
-
-```powershell
+```bash
 npm run build
 ```
 
-จากนั้นอัปโหลดโฟลเดอร์ `dist` เวอร์ชันล่าสุดไปยัง Netlify
+จากนั้นนำโฟลเดอร์ `dist` ไปวางใน [Netlify Drop](https://app.netlify.com/drop)
 
-### ข้อจำกัดของการอัปโหลดรูปภาพ
+> เว็บไซต์นี้เป็น static site การอัปโหลดรูปภาพจากหน้าเว็บจริงอาจต้องใช้
+> backend หรือบริการจัดเก็บไฟล์เพิ่มเติม
 
-ในสภาพแวดล้อมสำหรับพัฒนา Vite มี endpoint `/api/pictures` ที่ช่วยอ่านรายการไฟล์และรับการอัปโหลดรูปภาพเข้า `public/picture` อย่างไรก็ตาม endpoint ดังกล่าวเป็น development middleware ที่อยู่ใน `vite.config.ts` และไม่ได้ถูก deploy เป็น backend บน Netlify Drop
+## 🔄 อัปเดตไปยัง GitHub ทั้งสองบัญชี
 
-ดังนั้น:
+โปรเจ็กต์นี้ตั้งค่า remote ไว้สองแห่ง:
 
-- การแสดงรูปภาพ static ที่รวมอยู่ใน `public` ยังคงใช้งานได้ตามปกติ
-- การอัปโหลดรูปภาพจากหน้าเว็บจริงอาจไม่ทำงานบน Netlify Drop
-- หากต้องการอัปโหลดรูปภาพบนเว็บไซต์จริง ต้องย้าย endpoint ไปเป็น Netlify Function หรือเชื่อมต่อบริการจัดเก็บไฟล์ภายนอก
-
-## 9. การแก้ไขปัญหาเบื้องต้น
-
-### คำสั่ง `npm` ไม่พบ
-
-ติดตั้ง Node.js ใหม่จาก [เว็บไซต์ทางการของ Node.js](https://nodejs.org/) แล้วเปิด PowerShell หน้าต่างใหม่
-
-### Dependencies มีปัญหา
-
-ลบโฟลเดอร์ `node_modules` แล้วติดตั้งใหม่:
-
-```powershell
-Remove-Item -Recurse -Force "node_modules"
-npm ci
+```text
+origin  → Kantinan48/LOVE-GORPOR
+unlock  → Unlock-48/LOVE-GORPOR
 ```
 
-### Build ไม่สำเร็จ
+หลังแก้ไขโค้ดแล้วใช้คำสั่ง:
 
-ตรวจสอบตามลำดับ:
+```bash
+git add .
+git commit -m "Describe your update"
+git push origin main
+git push unlock main
+```
 
-1. อ่านข้อความ error ใน PowerShell
-2. เรียกใช้ `npm run lint` เพื่อค้นหาปัญหาในซอร์สโค้ด
-3. ตรวจสอบไฟล์ที่เพิ่งแก้ไขและ import ที่เกี่ยวข้อง
-4. เรียกใช้ `npm ci` หาก dependencies ไม่ครบ
-5. เรียกใช้ cd "C:\Users\67143\Desktop\lovegorpor\my-anniversary"
-6. npm run build`
+## 💌 หมายเหตุ
 
-### เปิดเว็บแล้วเห็นหน้าเก่าหรือไฟล์ไม่ครบ
+โปรเจ็กต์นี้สร้างขึ้นเพื่อเก็บความทรงจำส่วนตัว  
+รูปภาพและวิดีโอในโฟลเดอร์ `public/` เป็นเนื้อหาส่วนตัวของเจ้าของโปรเจ็กต์
 
-ตรวจสอบว่า:
+<div align="center">
 
-- build สำเร็จหลังจากแก้ไขไฟล์แล้ว
-- ลากโฟลเดอร์ `dist` ล่าสุด ไม่ใช่โฟลเดอร์เก่า
-- ไฟล์ `index.html` อยู่ภายในโฟลเดอร์ที่อัปโหลด
-- ลองเปิดเว็บในโหมดไม่ระบุตัวตนหรือกด `Ctrl + F5`
+### Made with love 🤍
 
-## 10. แนวทางการทำงานที่แนะนำ
-
-1. แก้ไขซอร์สโค้ดใน `src` หรือเพิ่มไฟล์ใน `public`
-2. เปิด `npm run dev` เพื่อดูผลระหว่างพัฒนา
-3. ตรวจสอบด้วย `npm run lint`
-4. สร้าง production build ด้วย `npm run build`
-5. ทดสอบด้วย `npm run preview`
-6. อัปโหลดโฟลเดอร์ `dist` ไปยัง Netlify Drop
-7. ตรวจสอบเว็บไซต์จริงหลัง deploy ทุกครั้ง
-
-ไม่ควรแก้ไขไฟล์ภายใน `dist` โดยตรง เนื่องจากไฟล์เหล่านี้จะถูกสร้างใหม่และถูกเขียนทับทุกครั้งที่เรียกใช้ `npm run build`
-#   L O V E - G O R P O R  
- #   L O V E - G O R P O R  
- 
+</div>
